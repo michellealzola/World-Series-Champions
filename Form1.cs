@@ -54,7 +54,7 @@ namespace World_Series_Champions
 
                 foreach (string winner in seriesWinners)
                 {
-                    if (winner.Equals(teamName, StringComparison.InvariantCultureIgnoreCase))
+                    if (String.Compare(winner, teamName) == 0)
                     {
                         winningList.Add(winner);
                     }
