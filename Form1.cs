@@ -52,14 +52,14 @@ namespace World_Series_Champions
 
                 inputFile.Close();
 
-                foreach (string winners in seriesWinners)
+                foreach (string winner in seriesWinners)
                 {
-                    if (winners == teamName) // should be ==
+                    if (winner.Equals(teamName, StringComparison.InvariantCultureIgnoreCase))
                     {
-                        winningList.Add(winners);
+                        winningList.Add(winner);
                     }
                 }
-                
+
             }
             catch (Exception ex)
             {
